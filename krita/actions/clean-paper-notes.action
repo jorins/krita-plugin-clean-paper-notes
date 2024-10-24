@@ -17,7 +17,7 @@
         </Action>
 
         <Action name="cleanPaperNotesInkSingle">
-          <icon>caligraphy</icon>
+          <icon>calligraphy</icon>
           <text>Clean paper note (pen)</text>
           <whatsThis>Clean up a single paper note written in ink</whatsThis>
           <toolTip>Clean up a single paper note written in ink</toolTip>
