@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionCollection version="2" name="Scripts">
+    <Actions category="Scripts">
+        <text>Clean paper notes</text>
+
+        <Action name="cleanPaperNotesPencilSingle">
+          <icon>document-edit</icon>
+          <text>Clean paper note (pencil)</text>
+          <whatsThis>Clean up a single paper note written in pencil</whatsThis>
+          <toolTip>Clean up a single paper note written in pencil</toolTip>
+          <iconText></iconText>
+          <activationFlags>10000</activationFlags>
+          <activationConditions>0</activationConditions>
+          <shortcut></shortcut>
+          <isCheckable>false</isCheckable>
+          <statusTip></statusTip>
+        </Action>
+
+        <Action name="cleanPaperNotesInkSingle">
+          <icon>caligraphy</icon>
+          <text>Clean paper note (pen)</text>
+          <whatsThis>Clean up a single paper note written in ink</whatsThis>
+          <toolTip>Clean up a single paper note written in ink</toolTip>
+          <iconText></iconText>
+          <activationFlags>10000</activationFlags>
+          <activationConditions>0</activationConditions>
+          <shortcut></shortcut>
+          <isCheckable>false</isCheckable>
+          <statusTip></statusTip>
+        </Action>
+    </Actions>
+</ActionCollection>
