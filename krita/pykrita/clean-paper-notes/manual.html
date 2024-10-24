@@ -1,0 +1,75 @@
+<h1>Clean Paper Notes</h1>
+
+<p>
+  Krita plugin for cleaning up scanned paper notes. There's an action variant
+  for notes written with a pencil (graphite) and one for notes written with a
+  pen (ink).
+</p>
+
+<p>
+  This plugin was written in a day to integrate my paper notes into my Obsidian
+  vault. It is only tested on Linux, and only as far as "it works on my
+  machine." Please exercise caution and back-up your files before you can verify
+  that you are able to get a workflow with this plugin working.
+</p>
+
+<h2>Installation</h2>
+
+<ol>
+  <li>
+    Copy the contents of this project's <code>krita</code> folder into your
+    <code>krita</code> folder. On Linux, this is usually
+    <code>$HOME/.local/share/krita/</code>. You can find the folder by pressing
+    <code>Settings</code> -> <code>Manage resources...</code> ->
+    <code>Open Resource Folder</code>.
+  </li>
+  <li>
+    Go to <code>Settings</code> -> <code>Configure Krita...</code> ->
+    <code>Python Plugin Manager</code> and check the box for <code>Clean paper
+    notes</code> to enable the plugin.
+  </li>
+  <li>
+    You can also install the files using GNU Stow as done in the included
+    <code>install.sh</code> and <code>uninstall.sh</code> scripts.
+  </li>
+</ol>
+
+<h2>Usage</h2>
+
+<ol>
+  <li>
+    The action cannot be undone so I recommend keeping your originals backed up
+    and saving a processed copy instead of overwriting the original.
+  </li>
+
+  <li>
+    Before running the actions, clean up your image by cropping as close to the
+    content area as possible and draw white over any elements you want to
+    remove.
+  </li>
+
+  <li>
+    Select the appropriate action under <code>Tools</code> ->
+    <code>Scripts</code> -> <code>Clean paper notes</code>. The action designed
+    for pencil will darken the text a lot more than the one for ink, while the
+    one for ink has some adjustments to retain colour.
+  </li>
+
+  <li>
+    To crop your picture afterwards, press <code>Select</code> -> <code>Select
+    Opaque</code> -> <code>Select Opaque (Replace)</code> followed by
+    <code>Image</code> -> <code>Trim to Selection</code>.
+  </li>
+
+  <li>
+    Export a copy of your image.
+  </li>
+</ol>
+
+<h2>How it works</h2>
+
+The plugin works by first altering levels to pull white closer to true white
+and the darkest colours towards black. It then converts white to alpha, and
+finally adjusts alpha so that all pixels below a certain opacity threshold are
+made fully transparent. In the ink version, this step also restores some
+brightness to colours.
