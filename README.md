@@ -7,6 +7,12 @@ vault. It is only tested on Linux, and only as far as "it works on my machine."
 Please exercise caution and back-up your files before you can verify that you
 are able to get a workflow with this plugin working.
 
+# Comparison
+
+![A paper with blots and short identifying sentences written with various pens,
+both pencil and various forms of ink.](./test-source.jpeg)
+![The same paper, processed with this plugin.](./test-processed.jpeg)
+
 # Installation
 
 1. Copy the contents of this project's `krita` folder into your `krita` folder.
