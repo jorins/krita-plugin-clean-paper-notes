@@ -9,8 +9,11 @@ are able to get a workflow with this plugin working.
 
 # Comparison
 
+Input:
 ![A paper with blots and short identifying sentences written with various pens,
 both pencil and various forms of ink.](./test-source.jpeg)
+
+Output with added white background:
 ![The same paper, processed with this plugin.](./test-processed.jpeg)
 
 # Installation
